@@ -1,0 +1,9 @@
+<div class="mx-auto w-25 ">
+  <% @posts.each do |post| %>
+
+  <div class="list-group d-flex border border-secondary p-4 m-2">
+    <p class="mb-1 fs-5"><%= post.body %></p>
+    <small class="align-self-end"><%= post.user %></small>
+  </div>
+  <% end %> <%= link_to 'New Post', new_post_path , class:'my-3  btn btn-primary w-100 block p-2'%>
+</div>
