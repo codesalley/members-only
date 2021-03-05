@@ -1,5 +1,12 @@
-<h1>New Post</h1>
+<div class="form-group w-25 mx-auto w-25">
+    <h1>New Post</h1>
 
-<%= render 'form', post: @post %>
+    <%= render 'form', post: @post %>
+    
+    <%= link_to 'Back', posts_path  , class:'my-3  btn btn-primary w-100 block p-2' %>
+    
+</div>
 
-<%= link_to 'Back', posts_path %>
+
+
+
