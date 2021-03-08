@@ -1,14 +1,4 @@
 <div class="mx-auto w-25 ">
-  <% @posts.each do |post| %>
-
-  <div class="list-group d-flex border border-secondary p-4 m-2">
-    <p class="mb-1 fs-5"><%= post.body %></p>
-    <% if user_signed_in? %>
-    <small class="align-self-end"> Author: <%=  post.user.email.split('@')[0] %></small>
-    <% else %>
-    <small class="align-self-end"> Login firstonly</small>
-    <% end %>
-    
-  </div>
-  <% end %> <%= link_to 'New Post', new_post_path , class:'my-3  btn btn-primary w-100 block p-2'%>
+<%= render partial: 'post' %>
+  <%= link_to 'New Post', new_post_path , class:'my-3  btn btn-primary w-100 block p-2'%>
 </div>
