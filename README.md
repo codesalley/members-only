@@ -2,7 +2,7 @@
 
 # Members-only
 
-This project is based on building an exclusive blog where members can write posts. Members can see who the author of a post is but non-members can only see the post not the author.
+This project is based on building an exclusive blog where members can write posts. Members can see who the author of a post is but non-members can only see the post, not the author.
 
 ## Members-only project features:
 
